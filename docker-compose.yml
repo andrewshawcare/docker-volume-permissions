@@ -5,6 +5,5 @@ services:
     environment:
       - HOST_UID
       - HOST_GID
-    user: ${HOST_UID}:${HOST_GID}
     volumes:
       - ./volume:/tmp/volume
