@@ -1,0 +1,10 @@
+version: '3'
+services:
+  service:
+    build: .
+    environment:
+      - HOST_UID
+      - HOST_GID
+    user: ${HOST_UID}:${HOST_GID}
+    volumes:
+      - ./volume:/tmp/volume
